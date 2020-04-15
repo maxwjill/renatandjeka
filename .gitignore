@@ -3,4 +3,5 @@ core/
 version
 log/
 /log
+vendor/
 phpunit-8.5.3.phar

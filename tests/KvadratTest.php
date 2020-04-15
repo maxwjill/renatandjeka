@@ -6,14 +6,6 @@ use vlad\Exception;
 class KvadratTest extends TestCase 
 {
 
-	public function testDiscriminant()
-	{
-	      $my = new Kvadrat();
-	      $this->assertEquals(-184, $my->dcrm(5, 6, 11));
-	      $this->assertEquals(16, $my->dcrm(2, 8, 6));
-	      $this->assertEquals(13, $my->dcrm(3, 5, 1));
-	}
-	
 	 public function testSolve()
 	{
 	      $my = new Kvadrat();
