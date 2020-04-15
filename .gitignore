@@ -1,0 +1,6 @@
+core/
+/core
+version
+log/
+/log
+phpunit-8.5.3.phar
