@@ -19,7 +19,7 @@ class Kvadrat extends Lineunoe implements \core\EquationInterface {
 	if ($dis < 0)
 {
 	$this->x = false;
-	throw new Exception('Discriminant < 0');
+	throw new \vlad\Burmantov('ошибка');
 }
 	elseif ($dis > 0)
 {

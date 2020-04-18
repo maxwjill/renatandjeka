@@ -1,7 +1,7 @@
 <?php
 use PHPUnit\Framework\TestCase;
 use vlad\Kvadrat;
-use vlad\Exception;
+use vlad\Burmantov;
 
 class KvadratTest extends TestCase 
 {
@@ -13,5 +13,12 @@ class KvadratTest extends TestCase
 	      $this->assertSame(array(3), $my->solve(1, -6, 9));
 	      $this->assertSame(array(-6), $my->solve(1, 12, 36));
 	}
-	
+public function testFailingSolve()
+        {
+        	$this->expectException(Burmantov::class);
+		$my = new Kvadrat();
+	        $my->solve(5, 1, 1);
+        }
 }
+
+ 

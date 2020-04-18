@@ -1,10 +1,11 @@
 <?php
 use PHPUnit\Framework\TestCase;
 use vlad\Lineunoe;
-use vlad\Exception;
+use vlad\Burmantov;
 
 class LineunoeTest extends TestCase 
 {
+	protected $objLine;
 
 	public function testLineunoe()
 	{
@@ -13,6 +14,11 @@ class LineunoeTest extends TestCase
 	      $this->assertEquals(-2, $my->yr(4, 8));
 	      $this->assertEquals(-2, $my->yr(8, 16));
 	}
+public function testFailingLlinear()
+        {
+        	$this->expectException(Burmantov::class);
+		$my = new Lineunoe();
+	        $my->yr(0, 16);
+        }
 
-	
 }
